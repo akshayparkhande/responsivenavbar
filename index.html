@@ -7,6 +7,7 @@
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
 <body>
@@ -26,10 +27,11 @@
           </ul>
         </div>
       </div>
-      <i class="material-icons" onclick="btnchange()" id="button">list</i>
+      <!-- <i class="material-icons" onclick="btnchange()" id="button">list</i> -->
+      <button id="button" onclick="btnchange()" class="fa fa-close"></button>
     </div>
     <div class="mainbody">
-      hello
+      <h1>hello</h1>
     </div>
   </div>
 
@@ -38,7 +40,10 @@
     
     function btnchange() {
      let x=document.getElementById('navbar');
+     let y=document.getElementById('button');
      x.classList.toggle("responsive")
+     y.classList.toggle("fa-bars")
+     y.classList.toggle("fa-close")
     }
   </script>
 </body>
